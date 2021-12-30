@@ -107,7 +107,7 @@ resource "aws_db_instance" "default" {
   instance_class       = "db.t2.micro"
   name                 = "freeqlk"
   username             = "admin"
-  password             = "9b4ef17157ab4e2a"
+  password             = "${PWD}"
   parameter_group_name = "default.mysql8.0"
   publicly_accessible  = true
   skip_final_snapshot  = true
